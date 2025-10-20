@@ -1,22 +1,56 @@
-# 🐍 bootcamp_python-aula01
+# 🐍 Projeto: bootcamp_python-aula01
 
-![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)
-[![Linguagem](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)](https://www.python.org/)
-
-Este repositório contém os exercícios práticos desenvolvidos durante a **Aula 01** do Bootcamp de Python. O foco foi em cobrir os fundamentos essenciais da linguagem: entrada de dados (`input()`), conversão de tipos (*casting*), manipulação básica de *strings* e operações aritméticas.
+Este projeto contém exercícios introdutórios em Python desenvolvidos durante a aula 01 do Bootcamp. Os exemplos abordam entrada de dados, manipulação de strings, operações matemáticas e formatação de saída.
 
 ---
 
-## ✨ Desafios e Funcionalidades Implementadas
+## 📘 Exercícios
 
-Os códigos a seguir representam os desafios resolvidos na aula, prontos para serem executados e testados.
+### 1️⃣ Contar caracteres do nome
 
-### 1. Contador de Caracteres no Nome
-
-Programa que solicita o nome do usuário e informa a quantidade de caracteres (incluindo espaços) que o nome digitado possui.
-
--   **Conceitos:** `input()`, `len()`, *casting* (`str()`).
+Solicita ao usuário que digite seu nome duas vezes e exibe o número de caracteres da segunda entrada.
 
 ```python
-# Versão Compacta
-# print("Seu nome tem " + str(len(input("Digite seu nome: "))) + " caracteres.")
+input("Digite seu nome: ")
+print("Seu nome tem " + str(len(input("Digite seu nome novamente para contar os caracteres: "))) + " caracteres.")
+```
+
+### 2️⃣ Soma de dois valores (versão direta)
+Solicita dois números e exibe a soma diretamente.
+
+```python
+print(int(input("Digite o primeiro número: ")) + int(input("Digite o segundo número: ")))
+```
+
+### 3️⃣ Soma de dois valores (versão com variáveis)
+Solicita dois números, armazena em variáveis e exibe a soma formatada.
+
+```python
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+print("A soma dos dois números é: " + str(num1 + num2))
+```
+
+### 4️⃣ Saudações com salário e bônus
+Solicita nome, salário e bônus, e exibe uma mensagem personalizada com o valor calculado.
+
+```python
+nome = input("Digite seu nome: ")
+salario = float(input("Digite o valor do seu salário mensal: "))
+bonus = float(input("Digite o valor do bônus recebido: "))
+
+print(f"Olá, {nome}! o seu bônus recebido foi R$ {(1000 + salario * bonus):.2f}.")
+```
+
+### 🚀 Como executar
+Certifique-se de ter o Python instalado.
+
+Copie os trechos de código para um arquivo .py ou execute diretamente no terminal.
+Siga as instruções exibidas para interagir com os programas.
+
+### 📚 Objetivos
+
+Praticar entrada e saída de dados
+Compreender manipulação de strings
+Realizar operações matemáticas básicas
+Aplicar formatação de texto com f-strings
