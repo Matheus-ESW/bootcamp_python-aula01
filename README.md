@@ -40,17 +40,15 @@ salario = float(input("Digite o valor do seu salário mensal: "))
 bonus = float(input("Digite o valor do bônus recebido: "))
 
 print(f"Olá, {nome}! o seu bônus recebido foi R$ {(1000 + salario * bonus):.2f}.")
-```
+🛠️ Como Executar
+Para rodar qualquer um dos exemplos de código, você deve ter o Python instalado em sua máquina.
 
-### 🚀 Como executar
-Certifique-se de ter o Python instalado.
+Clone o repositório (ou copie o código que deseja testar).
 
-Copie os trechos de código para um arquivo .py ou execute diretamente no terminal.
-Siga as instruções exibidas para interagir com os programas.
+Salve o código em um arquivo .py (ex: aula01.py).
 
-### 📚 Objetivos
+Execute pelo seu terminal (na pasta onde salvou o arquivo):
 
-Praticar entrada e saída de dados
-Compreender manipulação de strings
-Realizar operações matemáticas básicas
-Aplicar formatação de texto com f-strings
+Bash
+
+python aula01.py
